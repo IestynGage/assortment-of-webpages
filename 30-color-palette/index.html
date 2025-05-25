@@ -5,14 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Color palette</title>
   <style>
+    html,body {
+      margin: 0;
+      min-height: 100vh;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .colors-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      width: 100%;
+      height: calc(100vh - 115px);
+      margin: 0;
+      
+    }
+
+    #b1 {
+      background-color: red;
+    }
+    #b2 {
+      background-color: blue;
+    }
+    #b3 {
+      background-color: pink;
+    }
+    #b4 {
+      background-color: green;
+    }
+
+    span {
+      font-size: 1.2rem;
+    }
+
+    .button-bar {
+      display: flex;
+      justify-content: center;
+
+      padding: 25px;
+      background-color: #f1f1f1;
+      border-top: #000000 0.25em solid;
+    }
+
+  /* From Uiverse.io by Voxybuns */ 
+button {
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  transform: translateY(0);
+}
+ .color-box {
+  text-align: center;
+        padding-top: 5rem;
+ }
+
 
   </style>
 </head>
 <body>
+  <div class="colors-box">
+    <div class="color-box" id="b1"> 
+      <span id="b1-title" class="title"> Red</span> 
+    </div>
+    <div class="color-box" id="b2"> 
+      <span id="b2-title" class="title"> Red</span> 
+    </div>
+    <div class="color-box" id="b3"> 
+      <span id="b3-title" class="title"> Red</span> 
+    </div>
+    <div class="color-box" id="b4">
+      <span id="b4-title" class="title"> Red</span> 
+    </div>
+  </div>
+  <div class="button-bar">
+    <button id="generate">
+      <span class="button_top"> Generate </span>
+    </button>
 
-  <div id="1"></div>
-  <div id="2"></div>
-  <div id="3"></div>
-  <div id="4"></div>
+  </div>
+  <script>
+    const generateBtn = document.getElementById('generate');
+    const coloBoxDivs = document.getElementsByClassName('color-box');
+
+    generateBtn.addEventListener('click', () => {
+      for (let div of coloBoxDivs) {
+        console.log(div)
+        const titleBox = div.querySelector('span');
+        const color = generateColor();
+        div.style.backgroundColor = `#${color}`;
+        titleBox.textContent = `#${color}`;
+      }
+
+    });
+
+    function generateColor() {
+      return Math.floor(Math.random()*16777215).toString(16);
+    }
+  </script>
 </body>
 </html>
