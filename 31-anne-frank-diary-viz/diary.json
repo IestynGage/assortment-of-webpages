@@ -1,0 +1,659 @@
+[
+ {
+  "date": "14/06/1942",
+  "count": "232"
+ },
+ {
+  "date": "15/06/1942",
+  "count": "137"
+ },
+ {
+  "date": "20/06/1942",
+  "count": "888"
+ },
+ {
+  "date": "20/06/1942",
+  "count": "357"
+ },
+ {
+  "date": "21/06/1942",
+  "count": "599"
+ },
+ {
+  "date": "24/06/1942",
+  "count": "322"
+ },
+ {
+  "date": "30/06/1942",
+  "count": "692"
+ },
+ {
+  "date": "03/07/1942",
+  "count": "306"
+ },
+ {
+  "date": "05/07/1942",
+  "count": "382"
+ },
+ {
+  "date": "08/07/1942",
+  "count": "930"
+ },
+ {
+  "date": "09/07/1942",
+  "count": "645"
+ },
+ {
+  "date": "10/07/1942",
+  "count": "358"
+ },
+ {
+  "date": "11/07/1942",
+  "count": "585"
+ },
+ {
+  "date": "14/08/1942",
+  "count": "596"
+ },
+ {
+  "date": "21/08/1942",
+  "count": "267"
+ },
+ {
+  "date": "02/09/1942",
+  "count": "1514"
+ },
+ {
+  "date": "25/09/1942",
+  "count": "288"
+ },
+ {
+  "date": "27/09/1942",
+  "count": "567"
+ },
+ {
+  "date": "28/09/1942",
+  "count": "988"
+ },
+ {
+  "date": "29/09/1942",
+  "count": "543"
+ },
+ {
+  "date": "01/10/1942",
+  "count": "402"
+ },
+ {
+  "date": "03/10/1942",
+  "count": "125"
+ },
+ {
+  "date": "09/10/1942",
+  "count": "476"
+ },
+ {
+  "date": "16/10/1942",
+  "count": "317"
+ },
+ {
+  "date": "20/10/1942",
+  "count": "478"
+ },
+ {
+  "date": "29/10/1942",
+  "count": "307"
+ },
+ {
+  "date": "07/11/1942",
+  "count": "981"
+ },
+ {
+  "date": "09/11/1942",
+  "count": "522"
+ },
+ {
+  "date": "10/11/1942",
+  "count": "209"
+ },
+ {
+  "date": "12/11/1942",
+  "count": "166"
+ },
+ {
+  "date": "17/11/1942",
+  "count": "729"
+ },
+ {
+  "date": "19/11/1942",
+  "count": "508"
+ },
+ {
+  "date": "20/11/1942",
+  "count": "375"
+ },
+ {
+  "date": "28/11/1942",
+  "count": "479"
+ },
+ {
+  "date": "07/12/1942",
+  "count": "240"
+ },
+ {
+  "date": "10/12/1942",
+  "count": "697"
+ },
+ {
+  "date": "12/12/1942",
+  "count": "414"
+ },
+ {
+  "date": "22/12/1942",
+  "count": "416"
+ },
+ {
+  "date": "13/01/1943",
+  "count": "369"
+ },
+ {
+  "date": "30/01/1943",
+  "count": "435"
+ },
+ {
+  "date": "05/02/1943",
+  "count": "415"
+ },
+ {
+  "date": "27/02/1943",
+  "count": "336"
+ },
+ {
+  "date": "10/03/1943",
+  "count": "467"
+ },
+ {
+  "date": "12/03/1943",
+  "count": "387"
+ },
+ {
+  "date": "18/03/1943",
+  "count": "20"
+ },
+ {
+  "date": "19/03/1943",
+  "count": "238"
+ },
+ {
+  "date": "25/03/1943",
+  "count": "762"
+ },
+ {
+  "date": "27/03/1943",
+  "count": "260"
+ },
+ {
+  "date": "01/04/1943",
+  "count": "290"
+ },
+ {
+  "date": "02/04/1943",
+  "count": "437"
+ },
+ {
+  "date": "27/04/1943",
+  "count": "231"
+ },
+ {
+  "date": "01/05/1943",
+  "count": "342"
+ },
+ {
+  "date": "18/05/1943",
+  "count": "443"
+ },
+ {
+  "date": "13/06/1943",
+  "count": "336"
+ },
+ {
+  "date": "15/06/1943",
+  "count": "323"
+ },
+ {
+  "date": "11/07/1943",
+  "count": "514"
+ },
+ {
+  "date": "13/07/1943",
+  "count": "1038"
+ },
+ {
+  "date": "16/07/1943",
+  "count": "254"
+ },
+ {
+  "date": "19/07/1943",
+  "count": "261"
+ },
+ {
+  "date": "26/07/1943",
+  "count": "628"
+ },
+ {
+  "date": "29/07/1943",
+  "count": "558"
+ },
+ {
+  "date": "04/08/1943",
+  "count": "879"
+ },
+ {
+  "date": "05/08/1943",
+  "count": "392"
+ },
+ {
+  "date": "09/08/1943",
+  "count": "750"
+ },
+ {
+  "date": "10/08/1943",
+  "count": "376"
+ },
+ {
+  "date": "18/08/1943",
+  "count": "562"
+ },
+ {
+  "date": "20/08/1943",
+  "count": "412"
+ },
+ {
+  "date": "23/08/1943",
+  "count": "367"
+ },
+ {
+  "date": "10/09/1943",
+  "count": "246"
+ },
+ {
+  "date": "16/09/1943",
+  "count": "356"
+ },
+ {
+  "date": "29/09/1943",
+  "count": "218"
+ },
+ {
+  "date": "17/10/1943",
+  "count": "218"
+ },
+ {
+  "date": "29/10/1943",
+  "count": "437"
+ },
+ {
+  "date": "03/11/1943",
+  "count": "162"
+ },
+ {
+  "date": "08/11/1943",
+  "count": "460"
+ },
+ {
+  "date": "11/11/1943",
+  "count": "552"
+ },
+ {
+  "date": "17/11/1943",
+  "count": "337"
+ },
+ {
+  "date": "27/11/1943",
+  "count": "518"
+ },
+ {
+  "date": "06/12/1943",
+  "count": "240"
+ },
+ {
+  "date": "22/12/1943",
+  "count": "393"
+ },
+ {
+  "date": "24/12/1943",
+  "count": "551"
+ },
+ {
+  "date": "25/12/1943",
+  "count": "153"
+ },
+ {
+  "date": "27/12/1943",
+  "count": "90"
+ },
+ {
+  "date": "29/12/1943",
+  "count": "306"
+ },
+ {
+  "date": "02/01/1944",
+  "count": "488"
+ },
+ {
+  "date": "05/01/1944",
+  "count": "808"
+ },
+ {
+  "date": "06/01/1944",
+  "count": "715"
+ },
+ {
+  "date": "07/01/1944",
+  "count": "899"
+ },
+ {
+  "date": "12/01/1944",
+  "count": "724"
+ },
+ {
+  "date": "15/01/1944",
+  "count": "272"
+ },
+ {
+  "date": "22/01/1944",
+  "count": "555"
+ },
+ {
+  "date": "24/01/1944",
+  "count": "774"
+ },
+ {
+  "date": "27/01/1944",
+  "count": "301"
+ },
+ {
+  "date": "28/01/1944",
+  "count": "702"
+ },
+ {
+  "date": "03/02/1944",
+  "count": "1070"
+ },
+ {
+  "date": "12/02/1944",
+  "count": "157"
+ },
+ {
+  "date": "13/02/1944",
+  "count": "185"
+ },
+ {
+  "date": "14/02/1944",
+  "count": "448"
+ },
+ {
+  "date": "16/02/1944",
+  "count": "786"
+ },
+ {
+  "date": "18/02/1944",
+  "count": "220"
+ },
+ {
+  "date": "19/02/1944",
+  "count": "346"
+ },
+ {
+  "date": "23/02/1944",
+  "count": "541"
+ },
+ {
+  "date": "27/02/1944",
+  "count": "219"
+ },
+ {
+  "date": "28/02/1944",
+  "count": "155"
+ },
+ {
+  "date": "01/03/1944",
+  "count": "399"
+ },
+ {
+  "date": "02/03/1944",
+  "count": "561"
+ },
+ {
+  "date": "03/03/1944",
+  "count": "420"
+ },
+ {
+  "date": "04/03/1944",
+  "count": "606"
+ },
+ {
+  "date": "07/03/1944",
+  "count": "1083"
+ },
+ {
+  "date": "12/03/1944",
+  "count": "404"
+ },
+ {
+  "date": "14/03/1944",
+  "count": "632"
+ },
+ {
+  "date": "15/03/1944",
+  "count": "418"
+ },
+ {
+  "date": "16/03/1944",
+  "count": "465"
+ },
+ {
+  "date": "17/03/1944",
+  "count": "467"
+ },
+ {
+  "date": "19/03/1944",
+  "count": "601"
+ },
+ {
+  "date": "20/03/1944",
+  "count": "773"
+ },
+ {
+  "date": "22/03/1944",
+  "count": "632"
+ },
+ {
+  "date": "23/03/1944",
+  "count": "529"
+ },
+ {
+  "date": "27/03/1944",
+  "count": "726"
+ },
+ {
+  "date": "28/03/1944",
+  "count": "522"
+ },
+ {
+  "date": "29/03/1944",
+  "count": "469"
+ },
+ {
+  "date": "31/03/1944",
+  "count": "228"
+ },
+ {
+  "date": "01/04/1944",
+  "count": "225"
+ },
+ {
+  "date": "03/04/1944",
+  "count": "321"
+ },
+ {
+  "date": "04/04/1944",
+  "count": "600"
+ },
+ {
+  "date": "06/04/1944",
+  "count": "198"
+ },
+ {
+  "date": "11/04/1944",
+  "count": "2941"
+ },
+ {
+  "date": "14/04/1944",
+  "count": "679"
+ },
+ {
+  "date": "17/04/1944",
+  "count": "423"
+ },
+ {
+  "date": "18/04/1944",
+  "count": "221"
+ },
+ {
+  "date": "19/04/1944",
+  "count": "89"
+ },
+ {
+  "date": "27/04/1944",
+  "count": "393"
+ },
+ {
+  "date": "28/04/1944",
+  "count": "779"
+ },
+ {
+  "date": "02/05/1944",
+  "count": "631"
+ },
+ {
+  "date": "03/05/1944",
+  "count": "542"
+ },
+ {
+  "date": "05/05/1944",
+  "count": "726"
+ },
+ {
+  "date": "07/05/1944",
+  "count": "481"
+ },
+ {
+  "date": "08/05/1944",
+  "count": "551"
+ },
+ {
+  "date": "09/05/1944",
+  "count": "228"
+ },
+ {
+  "date": "10/05/1944",
+  "count": "308"
+ },
+ {
+  "date": "11/05/1944",
+  "count": "446"
+ },
+ {
+  "date": "13/05/1944",
+  "count": "161"
+ },
+ {
+  "date": "16/05/1944",
+  "count": "282"
+ },
+ {
+  "date": "19/05/1944",
+  "count": "159"
+ },
+ {
+  "date": "20/05/1944",
+  "count": "312"
+ },
+ {
+  "date": "22/05/1944",
+  "count": "751"
+ },
+ {
+  "date": "25/05/1944",
+  "count": "203"
+ },
+ {
+  "date": "26/05/1944",
+  "count": "638"
+ },
+ {
+  "date": "31/05/1944",
+  "count": "161"
+ },
+ {
+  "date": "05/06/1944",
+  "count": "73"
+ },
+ {
+  "date": "06/06/1944",
+  "count": "495"
+ },
+ {
+  "date": "09/06/1944",
+  "count": "204"
+ },
+ {
+  "date": "13/06/1944",
+  "count": "241"
+ },
+ {
+  "date": "14/06/1944",
+  "count": "633"
+ },
+ {
+  "date": "15/06/1944",
+  "count": "365"
+ },
+ {
+  "date": "16/06/1944",
+  "count": "208"
+ },
+ {
+  "date": "23/06/1944",
+  "count": "85"
+ },
+ {
+  "date": "27/06/1944",
+  "count": "219"
+ },
+ {
+  "date": "30/06/1944",
+  "count": "78"
+ },
+ {
+  "date": "06/07/1944",
+  "count": "794"
+ },
+ {
+  "date": "08/07/1944",
+  "count": "868"
+ },
+ {
+  "date": "15/07/1944",
+  "count": "1552"
+ },
+ {
+  "date": "21/07/1944",
+  "count": "489"
+ },
+ {
+  "date": "01/08/1944",
+  "text": "Dinsdag, 1 Augustus 1944 Lieve Kitty, ‘Een bundeltje tegenspraak’ is de laatste zin van mijn vorige brief en de eerste van mijn huidige. ‘Een bundeltje tegenspraak’, kun jij me precies uitleggen wat dat is? Wat betekent tegenspraak? Zoals zovele woorden heeft het twee betekenissen, tegenspraak van buiten en tegenspraak van binnen. Het eerste is het gewone ‘zich niet neerleggen bij andermans meningen, het zelf beter weten, het laatste woord hebben’, en n, allemaal onaangename eigenschappen waarom ik bekend sta. Het tweede, daar sta ik niet om bekend, dat is mijn eigen geheim. Ik heb je al eens meer verteld, dat mijn ziel als het ware in tweeën gesplitst is. De ene kant herbergt mijn uitgelaten vrolijkheid, spotternijen om alles, mijn levenslust en vooral het opvatten van de lichte kant van alles. Daaronder versta ik geen aanstoot nemen aan irten, een zoen, een omhelzing, een onnette mop. Deze kant zit meestal op de loer en verdringt de andere, die veel mooier, reiner en dieper is. Niet waar, de mooie zijde van Anne kent niemand en daarom kunnen mij ook zo weinig mensen lijden. Zeker, ik ben een amusante clown voor één middag, dan heeft iedereen weer voor een maand genoeg van me. Eigenlijk precies hetzelfde wat een liefdes lm voor diepdenkende mensen is, eenvoudig een a eiding, vermaak voor één keer, iets om gauw te vergeten, niet slecht maar nog minder goed. Het is heel naar voor me je dit te moeten vertellen, maar waarom zou ik het niet doen, als ik toch weet dat het de waarheid is? Mijn lichtere oppervlakkige kant zal de diepere altijd te vlug af zijn en daarom steeds overwinnen. Je kunt je niet voorstellen hoe vaak ik niet al geprobeerd heb deze Anne, die maar de helft is van alles wat Anne heet, weg te duwen, lam te slaan, te verbergen: het gaat niet en ik weet ook waarom het niet gaat. Ik ben erg bang dat allen die me kennen zoals ik altijd ben, zullen ontdekken dat ik een andere kant heb, een mooiere en betere kant. Ik ben bang dat ze met me zullen spotten, me belachelijk en sentimenteel vinden, me niet ernstig nemen. Ik ben gewend niet ernstig genomen te worden, maar alleen de ‘lichte’ Anne is het gewend en kan het verdragen, de ‘zwaardere’ is daarvoor te zwak. Als ik werkelijk eens een kwartier de goede Anne met geweld voor het voetlicht geplaatst heb, dan trekt zij zich als een kruidje roer-me-niet samen, zodra ze moet spreken, laat Anne no 1 aan het woord en is, vóór ik het weet, verdwenen. In gezelschap is de lieve Anne dus nog nooit, nog niet één keer tevoorschijn gekomen, maar in het alleen-zijn voert zij haast altijd de boventoon. Ik weet precies hoe ik zou willen zijn, hoe ik ook ben ... van binnen, maar helaas, ik ben het enkel voor mezelf. En dat is misschien, neen, heel zeker de reden waarom ik mezelf een gelukkige binnennatuur noem en andere mensen me een gelukkige buitennatuur vinden. Van binnen wijst de reine Anne me de weg, van buiten ben ik niets dan een van uitgelatenheid losgerukt geitje. Zoals ik al zei, ik voel alles anders aan dan ik het uitspreek en daardoor heb ik de naam van jongensnaloopster, irt, wijsneus en romannetjesleester gekregen. De vrolijke Anne lacht er om, geeft brutale antwoorden, trekt haar schouders onverschillig op, doet of het haar niets kan schelen, maar o wee, precies omgekeerd reageert de stille Anne. Als ik helemaal eerlijk ben, dan wil ik je wel bekennen, dat het me wel deert, dat ik onnoemelijk veel moeite doe anders te worden, maar dat ik telkens weer tegen sterkere legers vecht. Het snikt in me: ‘Zie je wel, dat is er van je terecht gekomen: slechte meningen, spottende en verstoorde gezichten, mensen die je antipathiek vinden en dat alles omdat je niet naar de goede raad van je eigen goede helft luistert. Ach, ik zou wel willen luisteren, maar het gaat niet; als ik stil en ernstig ben, denkt iedereen dat het een nieuwe komedie is, en dan moet ik me wel met een grapje er uit redden, om nog maar niet eens te spreken van mijn eigen familie, die beslist denkt dat ik ziek ben, me hoofdpijnpillen en zenuwtabletten laat slikken, me hals en voorhoofd voelt of ik koorts heb, naar mijn ontlasting vraagt en mijn slechte bui becritiseert. Dat houd ik niet vol: als er zo op me gelet wordt, word ik eerst snibbig, dan verdrietig en ten slotte draai ik mijn hart weer om, draai het slechte naar buiten, het goede naar binnen en zoek aldoor naar een middel om te worden, zoals ik zo erg graag zou willen zijn en zoals ik zou kunnen zijn, als ... er geén andere mensen in de wereld zouden wonen. Je Anne.",
+  "count": "803"
+ }
+]

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anne Frank Diary visualizer</title>
+<style>
+
+  :root{
+    --paper: rgb(255, 254, 248);
+  }
+    body {
+        font-family: monospace;
+        background-color: var(--paper);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .day-header {
+        position: sticky;
+        top: 20px;
+        text-align: center;
+        padding: 5px 5px 5px 0;
+        transform: rotate(-60deg);
+        width: 1px;
+        z-index: 99999;
+    }
+
+    .day {
+        height: 18px;
+        width: 18px;
+        background-color: #e3e3e3;
+        position: relative;
+        border-radius: 3px;
+    }
+
+    .day:hover::after {
+        content: attr(data-date) " (" attr(data-count) ")";
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        background: black;
+        color: white;
+        padding: 3px 6px;
+        font-size: 12px;
+        white-space: nowrap;
+        z-index: 10;
+    }
+
+    .legend {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .legend span {
+        display: inline-block;
+        width: 40px;
+        height: 15px;
+        margin: 0 2px;
+    }
+    .new-month {
+      position: relative;
+      width: 200px;
+    }
+    .days-header {
+      background-color: var(--paper);
+        position: sticky;
+       top: 0px;
+        z-index: 1000;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient(0deg,rgba(255, 254, 248, 0) 0%, rgba(255, 254, 248, 0.8) 25%, rgba(255, 254, 245, 1) 50%);
+    }
+</style>
+</head>
+<body>
+
+<h2>The diary of Anne Frank</h2>
+
+<p style="max-width: 50em;margin: auto;">
+  
+  If you've read Anne Frank's diary,
+  you might recall they are some large gaps between some entries.
+  This page visualize her entries.
+  Some other interesting facts is that:
+  <br/>
+  <br/>
+</p>
+<ul style="margin: auto;max-width: 26em;">
+  <li>She wrote 78,212 words.</li>
+  <li>The most she wrote in a day was 2,941.</li>
+  <li>The highest streak she got was 5 days.</li>
+  <li>Friday was the most frequent day she diaried.</li>
+  <li>She put 164 entries into her diary.</li>  
+</ul>
+
+<div class="calendar days-header">
+  <div class="day-header">Mon</div>
+  <div class="day-header">Tue</div>
+  <div class="day-header">Wed</div>
+  <div class="day-header">Thu</div>
+  <div class="day-header">Fri</div>
+  <div class="day-header">Sat</div>
+  <div class="day-header">Sun</div>
+</div>
+<div class="calendar" id="calendar"></div>
+
+<div class="legend" id="legend"></div>
+
+<script>
+
+fetch('./pearllogs.json')   // relative path
+  .then(response => {
+      if (!response.ok) {
+          throw new Error("Failed to load JSON");
+      }
+      return response.json();
+  })
+  .then(data => {
+      generateHeatmap(data);
+  })
+  .catch(error => {
+      console.error("Error loading data:", error);
+  });
+
+
+  function getFormattedDate(date) {
+    let year = date.getFullYear();
+    let month = (1 + date.getMonth()).toString().padStart(2, '0');
+    let day = date.getDate().toString().padStart(2, '0');
+    
+    return `${day}/${month}/${year}`;
+  }
+
+  function getMonth(date) {
+    const month = (1 + date.getMonth()).toString();
+    switch (month) {
+      case "1": 
+        return `Jan ${date.getFullYear()}`;
+      case "2": 
+        return "Feb";
+      case "3": 
+        return "Mar";
+      case "4": 
+        return "Apr";
+      case "5": 
+        return "May";
+      case "6": 
+        return "Jun";
+      case "7": 
+        return "Jul";
+      case "8": 
+        return "Aug";
+      case "9": 
+        return "Sep";
+      case "10": 
+        return "Oct";
+      case "11": 
+        return "Nov";
+      case "12": 
+        return "Dec";
+    }
+  }
+
+  function days_passed(first, second) { 
+    // return Math.floor((newDate - startDate) / (1000 * 60 * 60 * 24)); 
+    return Math.round((second - first) / (1000 * 60 * 60 * 24));
+  }
+
+function generateHeatmap(data) {
+
+    const dataMap = {};
+    let maxCount = 0;
+
+    data.forEach(entry => {
+        const [day, month, year] = entry.date.split('/');
+        const isoDate = `${year}-${month}-${day}`;
+        const count = parseInt(entry.count);
+
+        if (dataMap[isoDate] !== undefined) {
+          dataMap[isoDate] = dataMap[isoDate] + count;
+        } else {
+          dataMap[isoDate] = count;
+        }
+
+        if (count > maxCount) maxCount = count;
+    });
+
+    
+    const startDate = new Date("1942-06-14");
+    const endDate = new Date("1944-08-02");
+
+    const calendar = document.getElementById("calendar");
+
+    function getColor(value) {
+      if (!value) return "#f0f0f0";
+      const ratio = value / maxCount;
+      const lightness = 90 - ratio * 50; // 90% → 40%
+      return `hsl(145, 60%, ${lightness}%)`;
+    }
+
+    let current = new Date(startDate);
+
+    // Pad first week
+    for (let i = 0; i < 6; i++) {
+        calendar.appendChild(document.createElement("div"));
+    }
+
+    while (current <= endDate) {
+        const iso = current.toISOString().split("T")[0];
+        const count = dataMap[iso] || 0;
+
+        const div = document.createElement("div");
+        div.className = "day";
+        const color = getColor(count);
+        div.style.backgroundColor = color;
+        div.setAttribute("data-date", getFormattedDate(current));
+        div.setAttribute("data-count", count);
+
+        if (current.getDate().toString().padStart(2, '0') === '01') {
+          // div.style.border = "solid black 1px";
+          const newMonthDiv = document.createElement("div");
+          newMonthDiv.className = "new-month";
+          newMonthDiv.innerText = getMonth(current);
+          console.log("startDate", (current));
+          const weekNumber = (days_passed(startDate, current)) % 7;
+          if (weekNumber === 0) {
+            newMonthDiv.style.left = `${18 + 5}px`;
+          }
+          else {
+            const daysToSkip = 8 - (weekNumber);
+            newMonthDiv.style.left = `${daysToSkip * (18 + 5)}px`;
+          }
+          div.appendChild(newMonthDiv);
+        }
+        calendar.appendChild(div);
+
+        current.setDate(current.getDate() + 1);
+    }
+}
+</script> 
+
+</body>
+</html>
