@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab eye</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  div {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    font-size: larger;
+  }
+</style>
+<body>
+
+  <div>
+    See what happens when you look at another tab!
+  </div>
+
+  <script>
+
+
+  const closedIcon = "data:image/svg+xml," + encodeURIComponent(`
+    <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg">
+
+      <!-- Upper eyelid -->
+      <path d="M40,120 Q160,40 280,120"
+            fill="none" stroke="black" stroke-width="10" stroke-linecap="round"/>
+
+      <!-- Lower eyelid -->
+      <path d="M60,130 Q160,190 260,130"
+            fill="none" stroke="black" stroke-width="8" stroke-linecap="round"/>
+
+      <!-- Bottom eyelashes -->
+      <path d="M90,135 L80,165" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M120,145 L115,180" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M160,150 L160,185" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M200,145 L205,180" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M230,135 L240,165" stroke="black" stroke-width="8" stroke-linecap="round"/>
+
+    </svg>
+  `);
+
+
+  const openIcon = "data:image/svg+xml," + encodeURIComponent(`
+    <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg">
+
+      <!-- Eye outer shape -->
+      <path d="M30,110
+              Q160,10 290,110
+              Q160,210 30,110 Z"
+            fill="white" stroke="black" stroke-width="8" stroke-linecap="round"/>
+
+      <!-- Upper lid shadow -->
+      <path d="M50,105 Q160,30 270,105"
+              fill="none" stroke="black" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Iris -->
+      <circle cx="160" cy="115" r="55" fill="#3aa0ff" stroke="black" stroke-width="6"/>
+
+      <!-- Pupil -->
+      <circle cx="160" cy="120" r="25" fill="black"/>
+
+      <!-- Big highlight-->
+      <circle cx="140" cy="100" r="10" fill="white"/>
+      <circle cx="175" cy="85" r="6" fill="white"/>
+
+      <!-- Lower highlight curve -->
+      <path d="M110,155 Q160,180 210,155"
+            fill="none" stroke="white" stroke-width="5" opacity="0.6"/>
+
+      <!-- Upper eyelashes -->
+      <path d="M70,85 L55,55" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M110,60 L100,30" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M160,50 L160,20" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M210,60 L220,30" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M250,85 L265,55" stroke="black" stroke-width="8" stroke-linecap="round"/>
+
+      <!-- Lower tiny lashes -->
+      <path d="M110,165 L105,185" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M160,170 L160,195" stroke="black" stroke-width="8" stroke-linecap="round"/>
+      <path d="M210,165 L215,185" stroke="black" stroke-width="8" stroke-linecap="round"/>
+
+    </svg>
+  `);
+
+  function setIcon(iconHref) {
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "icon";
+      document.head.appendChild(link);
+    }
+
+    link.type = "image/svg+xml";
+    link.href = iconHref;
+  }
+
+  function setEye() {
+    if (document.visibilityState === "visible") {
+      setIcon(openIcon);
+    } else {
+        setIcon(closedIcon);
+    }
+  }
+
+
+  window.addEventListener('load', function () {  
+     document.addEventListener("visibilitychange", () => {
+      setEye();
+    });
+    setEye();
+  });
+
+  
+
+  </script>
+</body>
+</html>
